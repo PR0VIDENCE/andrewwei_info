@@ -3,36 +3,7 @@
 import { motion } from "framer-motion";
 import { Button, FadeInSection } from "@/components";
 
-const timeline = [
-  {
-    year: "2024",
-    title: "Senior Software Engineer",
-    company: "Tech Company",
-    description:
-      "Leading development of core platform features and mentoring junior developers.",
-  },
-  {
-    year: "2022",
-    title: "Software Engineer",
-    company: "Startup Inc",
-    description:
-      "Built scalable microservices and contributed to 3x user growth.",
-  },
-  {
-    year: "2020",
-    title: "Junior Developer",
-    company: "Agency Co",
-    description:
-      "Developed client websites and learned modern web development practices.",
-  },
-  {
-    year: "2020",
-    title: "Computer Science Degree",
-    company: "University",
-    description:
-      "Graduated with honors, focusing on software engineering and algorithms.",
-  },
-];
+const timeline: { year: string; title: string; company: string; description: string }[] = [];
 
 const interests = [
   {
@@ -84,14 +55,6 @@ export default function AboutPage() {
               About Me
             </h1>
             <p className="text-xl text-foreground-muted leading-relaxed mb-6">
-              I&apos;m a software engineer based in San Francisco, passionate about
-              creating digital experiences that are both beautiful and functional.
-            </p>
-            <p className="text-lg text-foreground-muted leading-relaxed">
-              With a background in computer science and several years of industry
-              experience, I specialize in building full-stack web applications using
-              modern technologies. I believe in writing clean, maintainable code and
-              creating interfaces that users love.
             </p>
           </div>
         </FadeInSection>
@@ -124,36 +87,6 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-2xl font-bold text-foreground">Quick Facts</h2>
               <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta">01.</span>
-                  <span className="text-foreground-muted">
-                    Currently building products at a fast-growing startup
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta">02.</span>
-                  <span className="text-foreground-muted">
-                    5+ years of experience in web development
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta">03.</span>
-                  <span className="text-foreground-muted">
-                    Contributed to 10+ open source projects
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta">04.</span>
-                  <span className="text-foreground-muted">
-                    Mentored 15+ junior developers
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta">05.</span>
-                  <span className="text-foreground-muted">
-                    Always learning something new
-                  </span>
-                </li>
               </ul>
               <div className="pt-4">
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">

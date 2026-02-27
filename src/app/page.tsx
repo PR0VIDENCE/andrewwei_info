@@ -9,37 +9,9 @@ import {
   FadeInSection,
 } from "@/components";
 
-const featuredProjects = [
-  {
-    title: "Project One",
-    description:
-      "A full-stack web application built with modern technologies. Features real-time updates and seamless user experience.",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
-    title: "Project Two",
-    description:
-      "Mobile-first design system and component library. Optimized for performance and accessibility.",
-    tags: ["TypeScript", "Tailwind", "Storybook"],
-    github: "https://github.com",
-  },
-  {
-    title: "Project Three",
-    description:
-      "Open-source tool that helps developers automate repetitive tasks and improve their workflow.",
-    tags: ["Python", "CLI", "Automation"],
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-];
+const featuredProjects: { title: string; description: string; tags: string[]; github?: string; demo?: string }[] = [];
 
-const skills = [
-  { name: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind"] },
-  { name: "Backend", items: ["Node.js", "Python", "PostgreSQL", "Redis"] },
-  { name: "Tools", items: ["Git", "Docker", "AWS", "Figma"] },
-];
+const skills: { name: string; items: string[] }[] = [];
 
 export default function Home() {
   return (
@@ -76,9 +48,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Software engineer passionate about building beautiful, functional, and
-              accessible web experiences. I love turning complex problems into simple,
-              elegant solutions.
+              Governance lead at GT AISI and technical AI safety researcher at ERA.
             </motion.p>
 
             <motion.div

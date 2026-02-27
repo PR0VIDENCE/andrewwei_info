@@ -17,13 +17,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Andrew Wei | Software Engineer",
-  description: "Personal website of Andrew Wei - Software Engineer building things for the web.",
-  keywords: ["software engineer", "web developer", "portfolio", "Andrew Wei"],
+  title: "andrew wei",
+  description: "andrew's grove",
+  keywords: ["software engineer", "AI governance", "AI safety", "strategy", "ERA fellow", "GT AISI"],
   authors: [{ name: "Andrew Wei" }],
   openGraph: {
-    title: "Andrew Wei | Software Engineer",
-    description: "Personal website of Andrew Wei - Software Engineer building things for the web.",
+    title: "andrew wei",
+    description: "andrew's grove of growing things",
     type: "website",
   },
 };

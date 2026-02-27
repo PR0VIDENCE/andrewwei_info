@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
+  { href: "/explore", label: "Explore" },
 ];
 
 function ThemeIcon({ theme }: { theme: string }) {
